@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { GitBranch, Users, Mail, ExternalLink } from "lucide-react";
+import { Github, Linkedin, Mail, ExternalLink } from "lucide-react";
 import { SITE_CONFIG, NAVIGATION } from "../../lib/constants";
 
 export default function Footer() {
@@ -23,7 +23,7 @@ export default function Footer() {
                 className="text-gray-400 hover:text-white transition-colors"
                 aria-label="GitHub"
               >
-                <GitBranch size={20} />
+                <Github size={20} />
               </a>
               <a
                 href={SITE_CONFIG.social.linkedin}
@@ -32,7 +32,7 @@ export default function Footer() {
                 className="text-gray-400 hover:text-white transition-colors"
                 aria-label="LinkedIn"
               >
-                <Users size={20} />
+                <Linkedin size={20} />
               </a>
               <a
                 href={`mailto:${SITE_CONFIG.social.email}`}

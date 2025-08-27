@@ -143,7 +143,7 @@ export default function ContactSection() {
     {
       icon: Linkedin,
       name: "LinkedIn",
-      href: "https://linkedin.com/in/mostafa-hasanalipourshahrabadi",
+      href: "https://linkedin.com/in/mostafa-shah",
       color: "#0077b5",
     },
   ];

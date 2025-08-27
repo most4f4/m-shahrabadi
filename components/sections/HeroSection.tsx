@@ -31,12 +31,11 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              To me, every problem is like a puzzle waiting to be solved - and I
-              absolutely love the challenge! As a computer programmer with an
-              engineering background (MSc), I&apos;m passionate about app
-              development. I piece together solutions using cloud technologies,
-              machine learning, and computer vision to create meaningful
-              applications.
+              To me, every problem is like a puzzle - and every puzzle has a
+              solution. As a computer engineer, I craft solutions that bridge
+              the gap between complex problems and user-friendly experiences,
+              leveraging cloud technologies, machine learning, and AI to build
+              the future.
             </motion.p>
 
             <motion.div

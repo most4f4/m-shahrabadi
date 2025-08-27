@@ -16,23 +16,24 @@ export const projects: Project[] = [
   // Featured Project
   {
     id: "chowhub",
-    title: "ChowHub",
+    title: "ChowHub - Restaurant Management System",
     description:
-      "A comprehensive restaurant management system built with Next.js, designed to streamline restaurant operations from order management to analytics.",
+      "Led a team of 4 developers to build a comprehensive full-stack restaurant management system with real-time analytics, AI insights, and multi-restaurant support.",
     category: "Featured",
     technologies: [
       "Next.js",
       "React",
       "Node.js",
+      "Express.js",
       "MongoDB",
-      "TypeScript",
-      "Bootstrap",
+      "JWT",
+      "AI Integration",
     ],
     image: "/images/projects/chowhub.png",
     demoUrl: "https://chowhub.vercel.app/",
     githubUrl: "https://github.com/most4f4/chowhub",
     featured: true,
-    year: "2024",
+    year: "2025",
     status: "completed",
   },
 
@@ -52,7 +53,7 @@ export const projects: Project[] = [
     ],
     image: "/images/projects/bookworm.png",
     githubUrl: "https://github.com/most4f4/bookworm",
-    year: "2024",
+    year: "2025",
     status: "completed",
   },
 
@@ -74,16 +75,19 @@ export const projects: Project[] = [
   // Cloud Project
   {
     id: "clouddocs",
-    title: "CloudDocs",
+    title: "CloudDocs - Cloud-Native Document Management",
     description:
-      "A modern React + Next.js frontend for securely managing, converting, and interacting with the Fragments microservice using Amazon Cognito authentication and OIDC.",
+      "Full-stack cloud-native application with React frontend and Node.js microservices backend. Features AWS Cognito authentication, S3 storage, DynamoDB, ECR/Fargate deployment, and real-time document conversion.",
     category: "Cloud",
     technologies: [
       "Next.js",
       "React",
+      "Node.js",
       "AWS Cognito",
-      "TypeScript",
-      "Bootstrap",
+      "AWS S3",
+      "DynamoDB",
+      "Docker",
+      "ECR/Fargate",
     ],
     image: "/images/projects/clouddocs.png",
     demoUrl: "https://clouddocs.vercel.app/",
@@ -103,7 +107,7 @@ export const projects: Project[] = [
     technologies: ["Java", "JavaFX", "SQLite", "JDBC", "Maven"],
     image: "/images/projects/hotel-reservation.png",
     githubUrl: "https://github.com/most4f4/hotel-reservation",
-    year: "2024",
+    year: "2025",
     status: "completed",
   },
 
@@ -116,7 +120,7 @@ export const projects: Project[] = [
     technologies: ["Java", "JavaFX", "SQLite", "Maven"],
     image: "/images/projects/inventory-management.png",
     githubUrl: "https://github.com/most4f4/inventory-management",
-    year: "2024",
+    year: "2025",
     status: "completed",
   },
 
@@ -129,7 +133,7 @@ export const projects: Project[] = [
     technologies: ["Java", "JavaFX", "FXML", "Maven"],
     image: "/images/projects/auto-loan.png",
     githubUrl: "https://github.com/most4f4/auto-loan-calculator",
-    year: "2024",
+    year: "2025",
     status: "completed",
   },
 

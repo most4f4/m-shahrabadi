@@ -1,8 +1,8 @@
 export const SITE_CONFIG = {
   name: "Mostafa Shahrabadi",
-  title: "Full-Stack Developer",
+  title: "Software Developer",
   description:
-    "I build modern web applications with React, Next.js, and Node.js",
+    "I create innovative software solutions and build scalable applications using modern technologies",
   url: "https://mostafa-shahrabadi.com",
   social: {
     github: "https://github.com/most4f4",

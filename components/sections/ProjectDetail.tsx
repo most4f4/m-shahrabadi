@@ -197,40 +197,45 @@ function getProjectContent(project: Project) {
   const projectContent = {
     chowhub: (
       <div className={styles.projectContent}>
+        <div className={styles.leadership}>
+          <h3>🎯 Team Leadership</h3>
+          <p>
+            Led a team of 4 full-stack developers through the complete software
+            development lifecycle, from requirements gathering to deployment and
+            maintenance.
+          </p>
+        </div>
         <div className={styles.contentGrid}>
           <div className={styles.contentBlock}>
-            <h3>Key Features</h3>
+            <h3>Backend Architecture</h3>
             <ul>
-              <li>
-                Real-time Dashboard with live overview of restaurant performance
-              </li>
-              <li>
-                AI-Powered Insights using Claude AI integration for business
-                intelligence
-              </li>
-              <li>Comprehensive Order Management with real-time tracking</li>
-              <li>Advanced Analytics with sales performance tracking</li>
-              <li>Role-based Access Control for managers and staff</li>
-              <li>Inventory Management with low stock alerts</li>
+              <li>RESTful API with Node.js and Express.js</li>
+              <li>MongoDB with Mongoose ODM for scalable data management</li>
+              <li>JWT authentication with role-based access control</li>
+              <li>Real-time inventory tracking and automatic deduction</li>
+              <li>AI integration with OpenRouter API for business insights</li>
+              <li>Comprehensive test suite with Jest (92%+ coverage)</li>
             </ul>
           </div>
           <div className={styles.contentBlock}>
-            <h3>Technical Highlights</h3>
+            <h3>Frontend Features</h3>
             <ul>
-              <li>Built with Next.js 15.3.2 and React 19.0.0</li>
-              <li>MongoDB with Mongoose ODM for data persistence</li>
-              <li>Jotai for atomic state management</li>
-              <li>Bootstrap 5.3.6 for responsive UI</li>
-              <li>Chart.js for data visualization</li>
-              <li>JWT authentication and authorization</li>
+              <li>Modern React 19 with Next.js 15 App Router</li>
+              <li>Real-time dashboard with advanced analytics</li>
+              <li>Responsive design with Bootstrap and custom components</li>
+              <li>Interactive data visualization with Chart.js</li>
+              <li>State management with Jotai for optimal performance</li>
+              <li>Multi-restaurant support with isolated data</li>
             </ul>
           </div>
         </div>
         <div className={styles.achievement}>
-          <h4>🏆 Achievement</h4>
+          <h4>🏆 Technical Achievement</h4>
           <p>
-            Successfully deployed on Vercel with 92%+ test coverage and handles
-            real-time data processing for multiple restaurant locations.
+            Successfully architected and deployed a production-ready full-stack
+            application serving multiple restaurant locations with real-time
+            data processing, comprehensive testing, and AI-powered business
+            intelligence.
           </p>
         </div>
       </div>
@@ -318,25 +323,43 @@ function getProjectContent(project: Project) {
       <div className={styles.projectContent}>
         <div className={styles.contentGrid}>
           <div className={styles.contentBlock}>
-            <h3>Cloud Integration</h3>
+            <h3>Cloud Architecture</h3>
             <ul>
-              <li>AWS Cognito authentication with OIDC implementation</li>
-              <li>Secure fragment management and conversion system</li>
-              <li>Real-time file format conversion capabilities</li>
-              <li>Professional dashboard with usage statistics</li>
-              <li>Multi-format support (text, data, images)</li>
+              <li>
+                AWS S3: Object storage for document fragments and converted
+                files
+              </li>
+              <li>
+                DynamoDB: NoSQL database for metadata and fragment indexing
+              </li>
+              <li>AWS Cognito: Enterprise authentication with OIDC/JWT</li>
+              <li>ECR/Fargate: Containerized deployment with Docker</li>
+              <li>LocalStack: Local AWS services emulation for development</li>
+              <li>
+                Multi-stage Docker builds: Optimized production containers
+              </li>
             </ul>
           </div>
           <div className={styles.contentBlock}>
-            <h3>Security Features</h3>
+            <h3>Microservices Backend</h3>
             <ul>
-              <li>Enterprise-grade AWS Cognito authentication</li>
-              <li>Authorization Code Flow with PKCE</li>
-              <li>Secure API communication with Bearer tokens</li>
-              <li>Input validation and error handling</li>
-              <li>Responsive design with accessibility compliance</li>
+              <li>RESTful API: Express.js with comprehensive endpoints</li>
+              <li>Format Conversion: Sharp for images, Markdown-it for text</li>
+              <li>Dual Storage: Memory (dev) and AWS (production) backends</li>
+              <li>Security: Helmet.js, CORS, input validation</li>
+              <li>92%+ Test Coverage: Jest with integration testing</li>
+              <li>Production Logging: Structured JSON logging with Pino</li>
             </ul>
           </div>
+        </div>
+        <div className={styles.achievement}>
+          <h4>🏆 Cloud Infrastructure Achievement</h4>
+          <p>
+            Successfully architected and deployed a production-ready
+            cloud-native application using AWS services with containerized
+            microservices, achieving 92%+ test coverage and seamless CI/CD
+            pipeline with automated format conversion capabilities.
+          </p>
         </div>
       </div>
     ),
