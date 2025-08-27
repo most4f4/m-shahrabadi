@@ -160,10 +160,10 @@ export default function ContactSection() {
         <div className={styles.headerContent}>
           <h1 className={styles.title}>Get In Touch</h1>
           <p className={styles.subtitle}>
-            I'm always interested in new opportunities, challenging projects,
-            and meaningful collaborations. Whether you have a project in mind,
-            want to discuss technology, or just say hello, I'd love to hear from
-            you.
+            I&apos;m always interested in new opportunities, challenging
+            projects, and meaningful collaborations. Whether you have a project
+            in mind, want to discuss technology, or just say hello, I&apos;d
+            love to hear from you.
           </p>
         </div>
       </motion.section>

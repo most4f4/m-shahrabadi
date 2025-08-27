@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./HeroSection.module.css";
 
 export default function HeroSection() {
@@ -44,12 +45,12 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              <a href="/projects" className={styles.primaryButton}>
+              <Link href="/projects" className={styles.primaryButton}>
                 View My Work
-              </a>
-              <a href="/contact" className={styles.secondaryButton}>
+              </Link>
+              <Link href="/contact" className={styles.secondaryButton}>
                 Get In Touch
-              </a>
+              </Link>
             </motion.div>
           </motion.div>
 

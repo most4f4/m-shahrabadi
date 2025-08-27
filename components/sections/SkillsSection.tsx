@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Brain, Cloud, Eye, Code, Database, Cpu } from "lucide-react";
+import { Brain, Cloud, Eye } from "lucide-react";
 import styles from "./SkillsSection.module.css";
 
 const skills = [
@@ -33,12 +33,6 @@ const skills = [
     icon: Eye,
     technologies: ["TensorFlow", "OpenCV", "Data Analysis", "Neural Networks"],
   },
-];
-
-const additionalSkills = [
-  { name: "React/Next.js", icon: Code, level: 90 },
-  { name: "Node.js", icon: Cpu, level: 85 },
-  { name: "MongoDB", icon: Database, level: 80 },
 ];
 
 export default function SkillsSection() {
@@ -101,47 +95,6 @@ export default function SkillsSection() {
             );
           })}
         </motion.div>
-
-        {/* Additional Skills Bar */}
-        {/* <motion.div
-          className={styles.additionalSkills}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          viewport={{ once: true }}
-        >
-          <h3 className={styles.additionalTitle}>Core Technologies</h3>
-          <div className={styles.skillBars}>
-            {additionalSkills.map((skill, index) => {
-              const IconComponent = skill.icon;
-              return (
-                <motion.div
-                  key={skill.name}
-                  className={styles.skillBar}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.6, delay: 0.6 + index * 0.1 }}
-                  viewport={{ once: true }}
-                >
-                  <div className={styles.skillInfo}>
-                    <IconComponent size={16} className={styles.skillIcon} />
-                    <span className={styles.skillName}>{skill.name}</span>
-                    <span className={styles.skillLevel}>{skill.level}%</span>
-                  </div>
-                  <div className={styles.progressBar}>
-                    <motion.div
-                      className={styles.progress}
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${skill.level}%` }}
-                      transition={{ duration: 1, delay: 0.8 + index * 0.1 }}
-                      viewport={{ once: true }}
-                    />
-                  </div>
-                </motion.div>
-              );
-            })}
-          </div>
-        </motion.div> */}
       </div>
     </section>
   );
