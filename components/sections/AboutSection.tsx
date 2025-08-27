@@ -265,12 +265,12 @@ export default function AboutSection() {
                     Birmingham (UK)
                   </strong>
                   , where my thesis focused on Earth Boundary Layer simulation
-                  in wind tunnels. During my studies, I was{" "}
+                  in wind tunnels. During my studies, my{" "}
                   <strong>
-                    selected for research in the Department of Civil and
-                    Mechanical Engineering
+                    research work was selected by the faculty of the Department
+                    of Civil and Mechanical Engineering
                   </strong>{" "}
-                  and received a{" "}
+                  and I received a{" "}
                   <strong>
                     bursary from Birmingham Center for Railway Systems
                     Engineering and Integration
@@ -323,7 +323,7 @@ export default function AboutSection() {
                 <p>
                   At Seneca, I maintained exceptional academic performance,
                   earning the honor of being on the
-                  <strong>President&apos;s Honor List 5 times</strong>. This
+                  <strong> President&apos;s Honor List 5 times</strong>. This
                   achievement reflects my dedication to mastering new
                   technologies while successfully transitioning from engineering
                   to software development. I&apos;m set to graduate in September
