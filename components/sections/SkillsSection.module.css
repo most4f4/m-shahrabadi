@@ -1,0 +1,88 @@
+.skills {
+  padding: 4rem 0;
+  background-color: white;
+}
+
+.container {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.blue {
+  background-color: #eff6ff;
+}
+
+.purple {
+  background-color: #faf5ff;
+}
+
+.green {
+  background-color: #f0fdf4;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.blue .cardTitle {
+  color: #2563eb;
+}
+
+.purple .cardTitle {
+  color: #7c3aed;
+}
+
+.green .cardTitle {
+  color: #059669;
+}
+
+.cardDescription {
+  color: #4b5563;
+  line-height: 1.6;
+}

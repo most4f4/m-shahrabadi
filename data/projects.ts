@@ -1,0 +1,338 @@
+export interface Project {
+  id: string;
+  title: string;
+  description: string;
+  category: string;
+  technologies: string[];
+  image: string;
+  demoUrl?: string;
+  githubUrl?: string;
+  featured?: boolean;
+  year: string;
+  status: "completed" | "in-progress" | "archived";
+}
+
+export const projects: Project[] = [
+  // Featured Project
+  {
+    id: "chowhub",
+    title: "ChowHub",
+    description:
+      "A comprehensive restaurant management system built with Next.js, designed to streamline restaurant operations from order management to analytics.",
+    category: "Featured",
+    technologies: [
+      "Next.js",
+      "React",
+      "Node.js",
+      "MongoDB",
+      "TypeScript",
+      "Bootstrap",
+    ],
+    image: "/images/projects/chowhub.png",
+    demoUrl: "https://chowhub.vercel.app/",
+    githubUrl: "https://github.com/most4f4/chowhub",
+    featured: true,
+    year: "2024",
+    status: "completed",
+  },
+
+  // Mobile Apps
+  {
+    id: "bookworm",
+    title: "Bookworm",
+    description:
+      "A community-driven book sharing mobile app built with React Native and Expo. Combines personal book tracking with community sharing through mapped book exchange locations.",
+    category: "Mobile Apps",
+    technologies: [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "Supabase",
+      "Google Books API",
+    ],
+    image: "/images/projects/bookworm.png",
+    githubUrl: "https://github.com/most4f4/bookworm",
+    year: "2024",
+    status: "completed",
+  },
+
+  // Machine Learning and Computer Vision
+  {
+    id: "sports-motion-detection",
+    title: "Sports Motion Detection & Viewport Tracking",
+    description:
+      'A Python-based motion detection and viewport tracking system that simulates a "virtual camera" for sports video analysis using computer vision techniques.',
+    category: "Machine Learning",
+    technologies: ["Python", "OpenCV", "NumPy", "Computer Vision"],
+    image: "/images/projects/sports-motion.png",
+    githubUrl: "https://github.com/most4f4/sports-motion-detection",
+    featured: true,
+    year: "2025",
+    status: "completed",
+  },
+
+  // Cloud Project
+  {
+    id: "clouddocs",
+    title: "CloudDocs",
+    description:
+      "A modern React + Next.js frontend for securely managing, converting, and interacting with the Fragments microservice using Amazon Cognito authentication and OIDC.",
+    category: "Cloud",
+    technologies: [
+      "Next.js",
+      "React",
+      "AWS Cognito",
+      "TypeScript",
+      "Bootstrap",
+    ],
+    image: "/images/projects/clouddocs.png",
+    demoUrl: "https://clouddocs.vercel.app/",
+    githubUrl: "https://github.com/most4f4/fragments-ui",
+    featured: true,
+    year: "2025",
+    status: "completed",
+  },
+
+  // Desktop Applications
+  {
+    id: "hotel-reservation",
+    title: "Hotel Reservation Management System",
+    description:
+      "A JavaFX desktop application designed to simplify hotel operations including room booking, guest data management, and administrative oversight.",
+    category: "Desktop Apps",
+    technologies: ["Java", "JavaFX", "SQLite", "JDBC", "Maven"],
+    image: "/images/projects/hotel-reservation.png",
+    githubUrl: "https://github.com/most4f4/hotel-reservation",
+    year: "2024",
+    status: "completed",
+  },
+
+  {
+    id: "inventory-management",
+    title: "Inventory Management System",
+    description:
+      "A comprehensive JavaFX-based desktop application for managing inventory parts and products with persistent data storage capabilities.",
+    category: "Desktop Apps",
+    technologies: ["Java", "JavaFX", "SQLite", "Maven"],
+    image: "/images/projects/inventory-management.png",
+    githubUrl: "https://github.com/most4f4/inventory-management",
+    year: "2024",
+    status: "completed",
+  },
+
+  {
+    id: "auto-loan-calculator",
+    title: "Auto Loan Calculator",
+    description:
+      "A comprehensive JavaFX-based desktop application for calculating auto loan payments with detailed amortization schedules and loan management features.",
+    category: "Desktop Apps",
+    technologies: ["Java", "JavaFX", "FXML", "Maven"],
+    image: "/images/projects/auto-loan.png",
+    githubUrl: "https://github.com/most4f4/auto-loan-calculator",
+    year: "2024",
+    status: "completed",
+  },
+
+  // Web Apps
+  {
+    id: "cuisine-crafters",
+    title: "Cuisine Crafters",
+    description:
+      "A comprehensive meal kit delivery platform built with Node.js, Express, and MongoDB. Provides a seamless experience for customers to browse and order fresh meal kits.",
+    category: "Web Apps",
+    technologies: ["Node.js", "Express", "MongoDB", "EJS", "Bootstrap"],
+    image: "/images/projects/cuisine-crafters.png",
+    demoUrl: "https://cuisinecrafters.onrender.com/",
+    githubUrl: "https://github.com/most4f4/cuisine-crafters",
+    year: "2024",
+    status: "completed",
+  },
+
+  // Unix Programming Projects
+  {
+    id: "udp-logging-system",
+    title: "Embedded Distributed Logging System",
+    description:
+      "A real-time distributed logging system using UDP socket communication, multithreading, and asynchronous I/O with advanced network programming concepts.",
+    category: "Unix Programming",
+    technologies: ["C++", "UDP Sockets", "Multithreading", "Linux"],
+    image: "/images/projects/udp-logging.png",
+    githubUrl: "https://github.com/most4f4/udp-logging-system",
+    year: "2024",
+    status: "completed",
+  },
+
+  {
+    id: "shared-memory-ipc",
+    title: "Shared Memory & Semaphore IPC System",
+    description:
+      "Advanced Inter-Process Communication using System V Shared Memory and POSIX Named Semaphores to enable synchronized message exchange between multiple client processes.",
+    category: "Unix Programming",
+    technologies: ["C", "System V IPC", "POSIX Semaphores", "Linux"],
+    image: "/images/projects/shared-memory.png",
+    githubUrl: "https://github.com/most4f4/shared-memory-ipc",
+    year: "2024",
+    status: "completed",
+  },
+
+  {
+    id: "socket-server-client",
+    title: "Multi-threaded Socket Server-Client",
+    description:
+      "A high-performance multi-threaded TCP server with asynchronous client handling, mutex-protected shared resources, and timeout-based connection management.",
+    category: "Unix Programming",
+    technologies: ["C++", "TCP Sockets", "Multithreading", "Mutex", "Linux"],
+    image: "/images/projects/socket-server.png",
+    githubUrl: "https://github.com/most4f4/socket-server-client",
+    year: "2024",
+    status: "completed",
+  },
+
+  {
+    id: "message-queue-system",
+    title: "Message Queue Server-Client System",
+    description:
+      "A multi-threaded message queue communication system using System V Message Queues, POSIX threads, and mutex synchronization.",
+    category: "Unix Programming",
+    technologies: ["C++", "Message Queues", "POSIX Threads", "Mutex", "Linux"],
+    image: "/images/projects/message-queue.png",
+    githubUrl: "https://github.com/most4f4/message-queue-system",
+    year: "2024",
+    status: "completed",
+  },
+
+  {
+    id: "unix-pipe-programming",
+    title: "Unix Pipe Programming - IPC System",
+    description:
+      "A Unix shell pipeline simulator demonstrating advanced Inter-Process Communication using anonymous pipes, process forking, I/O redirection, and command execution.",
+    category: "Unix Programming",
+    technologies: ["C", "Unix Pipes", "Fork/Exec", "I/O Redirection", "Linux"],
+    image: "/images/projects/unix-pipes.png",
+    githubUrl: "https://github.com/most4f4/unix-pipe-programming",
+    year: "2024",
+    status: "completed",
+  },
+
+  {
+    id: "unix-domain-socket",
+    title: "Unix Domain Socket Client-Server",
+    description:
+      "Advanced Inter-Process Communication using Unix Domain Sockets with SOCK_STREAM semantics for reliable, high-performance local communication.",
+    category: "Unix Programming",
+    technologies: ["C", "Unix Domain Sockets", "IPC", "Linux"],
+    image: "/images/projects/unix-domain-socket.png",
+    githubUrl: "https://github.com/most4f4/unix-domain-socket",
+    year: "2024",
+    status: "completed",
+  },
+
+  {
+    id: "network-monitor-system",
+    title: "Network Monitor System",
+    description:
+      "A distributed network interface monitoring system using advanced IPC, Unix domain sockets, process forking, and real-time file system monitoring.",
+    category: "Unix Programming",
+    technologies: [
+      "C++",
+      "Unix Sockets",
+      "Fork",
+      "Select",
+      "File Locking",
+      "Linux",
+    ],
+    image: "/images/projects/network-monitor.png",
+    githubUrl: "https://github.com/most4f4/network-monitor-system",
+    year: "2024",
+    status: "completed",
+  },
+
+  {
+    id: "signal-based-monitor",
+    title: "Signal-Based System Monitor",
+    description:
+      "A signal-driven system monitoring architecture using Unix signals for inter-process communication, fork/exec process management, and real-time network interface monitoring.",
+    category: "Unix Programming",
+    technologies: ["C++", "Unix Signals", "Fork/Exec", "IPC", "Linux"],
+    image: "/images/projects/signal-monitor.png",
+    githubUrl: "https://github.com/most4f4/signal-based-monitor",
+    year: "2025",
+    status: "completed",
+  },
+
+  {
+    id: "linux-kernel-module",
+    title: "Linux Kernel Module - Device Driver",
+    description:
+      "A Linux kernel module that simulates a hardware device driver using character device interface, kernel threading, ioctl system calls, and kernel-userspace communication.",
+    category: "Unix Programming",
+    technologies: [
+      "C",
+      "Linux Kernel",
+      "Device Drivers",
+      "ioctl",
+      "Kernel Threading",
+    ],
+    image: "/images/projects/kernel-module.png",
+    githubUrl: "https://github.com/most4f4/linux-kernel-module",
+    year: "2025",
+    status: "completed",
+  },
+
+  {
+    id: "ioctl-framebuffer",
+    title: "ioctl Framebuffer Control System",
+    description:
+      "Low-level hardware interaction using ioctl system calls to communicate with the Linux framebuffer device for retrieving graphics hardware information.",
+    category: "Unix Programming",
+    technologies: ["C++", "ioctl", "Linux Framebuffer", "Hardware Interface"],
+    image: "/images/projects/framebuffer.png",
+    githubUrl: "https://github.com/most4f4/ioctl-framebuffer",
+    year: "2025",
+    status: "completed",
+  },
+
+  {
+    id: "network-interface-info",
+    title: "Network Interface Information Retrieval",
+    description:
+      "A comprehensive network interface inspection tool using ioctl system calls and socket-based communication to retrieve detailed network configuration information.",
+    category: "Unix Programming",
+    technologies: [
+      "C++",
+      "ioctl",
+      "Socket Programming",
+      "Network Interface",
+      "Linux",
+    ],
+    image: "/images/projects/network-interface.png",
+    githubUrl: "https://github.com/most4f4/network-interface-info",
+    year: "2025",
+    status: "completed",
+  },
+];
+
+export const categories = [
+  "Featured",
+  "Mobile Apps",
+  "Machine Learning",
+  "Cloud",
+  "Desktop Apps",
+  "Web Apps",
+  "Unix Programming",
+];
+
+// Helper functions
+export const getFeaturedProjects = () =>
+  projects.filter((project) => project.featured);
+
+export const getProjectsByCategory = (category: string) =>
+  projects.filter((project) => project.category === category);
+
+export const getProjectById = (id: string) =>
+  projects.find((project) => project.id === id);
+
+export const getAllTechnologies = () => {
+  const allTech = projects.flatMap((project) => project.technologies);
+  return [...new Set(allTech)].sort();
+};
