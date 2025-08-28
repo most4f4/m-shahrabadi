@@ -155,7 +155,7 @@ export default function AboutSection() {
                 Get In Touch
               </Link>
 
-              <a href="/resume.pdf" download className={styles.secondaryButton}>
+              <a href="/Resume.pdf" download className={styles.secondaryButton}>
                 <Download size={20} />
                 Download Resume
               </a>
