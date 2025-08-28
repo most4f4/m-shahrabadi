@@ -19,7 +19,7 @@ export const projects: Project[] = [
     title: "ChowHub - Restaurant Management System",
     description:
       "Led a team of 4 developers to build a comprehensive full-stack restaurant management system with real-time analytics, AI insights, and multi-restaurant support.",
-    category: "Featured",
+    category: "Web Apps",
     technologies: [
       "Next.js",
       "React",
@@ -317,7 +317,6 @@ export const projects: Project[] = [
 ];
 
 export const categories = [
-  "Featured",
   "Mobile Apps",
   "Machine Learning",
   "Cloud",
