@@ -279,7 +279,7 @@ export default function AboutSection() {
                 </div>
                 <div className={styles.storyImage}>
                   <Image
-                    src="/images/journey/university.jpg"
+                    src="/images/journey/university.JPG"
                     alt="University research"
                     fill
                     className={styles.storyPhoto}
