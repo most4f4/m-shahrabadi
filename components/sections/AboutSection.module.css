@@ -280,10 +280,24 @@
   background: #f8fafc;
   border-radius: 12px;
   border-left: 4px solid #2563eb;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
 }
 
 .storyBlock:last-child {
   margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .storyBlock {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.storyContent {
+  flex: 1;
 }
 
 .storyBlock h3 {
@@ -301,6 +315,28 @@
 .storyBlock strong {
   color: #2563eb;
   font-weight: 600;
+}
+
+.storyImage {
+  position: relative;
+  width: 200px;
+  height: 150px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .storyImage {
+    width: 100%;
+    height: 200px;
+    margin-top: 1rem;
+  }
+}
+
+.storyPhoto {
+  object-fit: cover;
 }
 
 /* Skills Section */

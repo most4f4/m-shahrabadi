@@ -253,94 +253,144 @@ export default function AboutSection() {
           <div className={styles.journeyContent}>
             <div className={styles.journeyStory}>
               <div className={styles.storyBlock}>
-                <h3>🎓 Engineering Foundation & Research Excellence</h3>
-                <p>
-                  I earned my{" "}
-                  <strong>
-                    Master&apos;s in Engineering from the University of
-                    Birmingham (UK)
-                  </strong>
-                  , where my thesis focused on Earth Boundary Layer simulation
-                  in wind tunnels. During my studies, my{" "}
-                  <strong>
-                    research work was selected by the faculty of the Department
-                    of Civil and Mechanical Engineering
-                  </strong>{" "}
-                  and I received a{" "}
-                  <strong>
-                    bursary from Birmingham Center for Railway Systems
-                    Engineering and Integration
-                  </strong>
-                  . This research required me to work with big data excavated by
-                  probes to verify simulated wind patterns—and that&apos;s when
-                  my interest in programming first sparked.
-                </p>
+                <div className={styles.storyContent}>
+                  <h3>🎓 Engineering Foundation & Research Excellence</h3>
+                  <p>
+                    I earned my{" "}
+                    <strong>
+                      Master&apos;s in Engineering from the University of
+                      Birmingham (UK)
+                    </strong>
+                    , where my thesis focused on Earth Boundary Layer simulation
+                    in wind tunnels. During my studies, my{" "}
+                    <strong>
+                      research work was selected by the faculty of the
+                      Department of Civil and Mechanical Engineering
+                    </strong>{" "}
+                    and I received a{" "}
+                    <strong>
+                      bursary from Birmingham Center for Railway Systems
+                      Engineering and Integration
+                    </strong>
+                    . This research required me to work with big data excavated
+                    by probes to verify simulated wind patterns—and that&apos;s
+                    when my interest in programming first sparked.
+                  </p>
+                </div>
+                <div className={styles.storyImage}>
+                  <Image
+                    src="/images/journey/university.jpg"
+                    alt="University research"
+                    fill
+                    className={styles.storyPhoto}
+                  />
+                </div>
               </div>
 
               <div className={styles.storyBlock}>
-                <h3>🏆 Engineering Competitions & Innovation</h3>
-                <p>
-                  My engineering journey was marked by competitive success. I
-                  achieved{" "}
-                  <strong>
-                    First and Third place in the National Competition of
-                    Spaghetti Structures in two consecutive years
-                  </strong>
-                  , designing and building bridges with spaghetti while
-                  maintaining the heaviest loads. These competitions taught me
-                  the importance of optimization, structural integrity, and
-                  innovative problem-solving under constraints—principles I now
-                  apply to software architecture.
-                </p>
+                <div className={styles.storyContent}>
+                  <h3>🏆 Engineering Competitions & Innovation</h3>
+                  <p>
+                    My engineering journey was marked by competitive success. I
+                    achieved{" "}
+                    <strong>
+                      First and Third place in the National Competition of
+                      Spaghetti Structures in two consecutive years
+                    </strong>
+                    , designing and building bridges with spaghetti while
+                    maintaining the heaviest loads. These competitions taught me
+                    the importance of optimization, structural integrity, and
+                    innovative problem-solving under constraints—principles I
+                    now apply to software architecture.
+                  </p>
+                </div>
+                <div className={styles.storyImage}>
+                  <Image
+                    src="/images/journey/competition.jpg"
+                    alt="Engineering competition"
+                    fill
+                    className={styles.storyPhoto}
+                  />
+                </div>
               </div>
 
               <div className={styles.storyBlock}>
-                <h3>🌍 The Career Transition</h3>
-                <p>
-                  When I moved to Canada, I saw it as a perfect opportunity for
-                  both personal and professional transformation. Although I was
-                  fortunate to secure a{" "}
-                  <strong>
-                    Project Engineer position at Aldani Master Group
-                  </strong>{" "}
-                  within my first month, I realized my true passion lay in
-                  software development. After 8 months, I made the bold decision
-                  to enroll in the{" "}
-                  <strong>
-                    Computer Programming & Analysis program at Seneca
-                    Polytechnic
-                  </strong>
-                  .
-                </p>
+                <div className={styles.storyContent}>
+                  <h3>🌍 The Career Transition</h3>
+                  <p>
+                    When I moved to Canada, I saw it as a perfect opportunity
+                    for both personal and professional transformation. Although
+                    I was fortunate to secure a{" "}
+                    <strong>
+                      Project Engineer position at Aldani Master Group
+                    </strong>{" "}
+                    within my first month, I realized my true passion lay in
+                    software development. After 8 months, I made the bold
+                    decision to enroll in the{" "}
+                    <strong>
+                      Computer Programming & Analysis program at Seneca
+                      Polytechnic
+                    </strong>
+                    .
+                  </p>
+                </div>
+                <div className={styles.storyImage}>
+                  <Image
+                    src="/images/journey/canada.jpg"
+                    alt="Career transition"
+                    fill
+                    className={styles.storyPhoto}
+                  />
+                </div>
               </div>
 
               <div className={styles.storyBlock}>
-                <h3>🎯 Academic Excellence in Programming</h3>
-                <p>
-                  At Seneca, I maintained exceptional academic performance,
-                  earning the honor of being on the
-                  <strong> President&apos;s Honor List 5 times</strong>. This
-                  achievement reflects my dedication to mastering new
-                  technologies while successfully transitioning from engineering
-                  to software development. I&apos;m set to graduate in September
-                  2025.
-                </p>
+                <div className={styles.storyContent}>
+                  <h3>🎯 Academic Excellence in Programming</h3>
+                  <p>
+                    At Seneca, I maintained exceptional academic performance,
+                    earning the honor of being on the
+                    <strong> President&apos;s Honor List 5 times</strong>. This
+                    achievement reflects my dedication to mastering new
+                    technologies while successfully transitioning from
+                    engineering to software development. I&apos;m set to
+                    graduate in September 2025.
+                  </p>
+                </div>
+                <div className={styles.storyImage}>
+                  <Image
+                    src="/images/journey/seneca.png"
+                    alt="Seneca studies"
+                    fill
+                    className={styles.storyPhoto}
+                  />
+                </div>
               </div>
 
               <div className={styles.storyBlock}>
-                <h3>💼 Professional Software Development</h3>
-                <p>
-                  I secured a{" "}
-                  <strong>
-                    Web Developer Intern position at Questrade Financial Inc.
-                  </strong>{" "}
-                  (September-December 2024), where I maintained and enhanced
-                  external corporate websites and internal departmental Google
-                  Sites. I collaborated with cross-functional teams to fulfill
-                  design requirements, integrate event tracking systems, and
-                  resolve website issues, improving functionality and UI
-                  consistency across multiple platforms.
-                </p>
+                <div className={styles.storyContent}>
+                  <h3>💼 Professional Software Development</h3>
+                  <p>
+                    I secured a{" "}
+                    <strong>
+                      Web Developer Intern position at Questrade Financial Inc.
+                    </strong>{" "}
+                    (September-December 2024), where I maintained and enhanced
+                    external corporate websites and internal departmental Google
+                    Sites. I collaborated with cross-functional teams to fulfill
+                    design requirements, integrate event tracking systems, and
+                    resolve website issues, improving functionality and UI
+                    consistency across multiple platforms.
+                  </p>
+                </div>
+                <div className={styles.storyImage}>
+                  <Image
+                    src="/images/journey/questrade.jpeg"
+                    alt="Professional development"
+                    fill
+                    className={styles.storyPhoto}
+                  />
+                </div>
               </div>
             </div>
           </div>
