@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   GraduationCap,
-  MapPin,
   Briefcase,
   Code,
   Award,
@@ -18,12 +17,9 @@ import {
   Linkedin,
   Mail,
 } from "lucide-react";
-import { getAllTechnologies } from "../../data/projects";
 import styles from "./AboutSection.module.css";
 
 export default function AboutSection() {
-  const technologies = getAllTechnologies();
-
   const stats = [
     {
       icon: GraduationCap,
