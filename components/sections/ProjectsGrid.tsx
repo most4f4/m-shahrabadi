@@ -40,7 +40,9 @@ export default function ProjectsGrid({
         );
 
       const matchesCategory =
-        selectedCategory === "All" || project.category === selectedCategory;
+        selectedCategory === "All" ||
+        project.category === selectedCategory ||
+        (selectedCategory === "Featured" && project.featured === true);
 
       return matchesSearch && matchesCategory;
     });

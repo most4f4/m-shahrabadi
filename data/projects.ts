@@ -317,6 +317,7 @@ export const projects: Project[] = [
 ];
 
 export const categories = [
+  "Featured",
   "Mobile Apps",
   "Machine Learning",
   "Cloud",
