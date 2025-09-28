@@ -382,7 +382,7 @@ function getProjectContent(project: Project) {
                 Three intelligent chat modes: Auto (Smart), Always Search, and
                 Chat Only
               </li>
-              <li>LangChain integration with Groq's Llama 3.1 8B model</li>
+              <li>LangChain integration with Groq&apos;s Llama 3.1 8B model</li>
               <li>Smart search detection using keyword analysis</li>
               <li>Context-aware conversation handling with memory</li>
               <li>Real-time web search integration via SerpAPI</li>
