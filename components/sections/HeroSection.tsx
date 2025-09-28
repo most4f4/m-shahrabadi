@@ -33,7 +33,7 @@ export default function HeroSection() {
               transition={{ duration: 0.8, delay: 0.4 }}
             >
               To me, every problem is like a puzzle - and every puzzle has a
-              solution. As a computer engineer, I craft solutions that bridge
+              solution. As a Software engineer, I craft solutions that bridge
               the gap between complex problems and user-friendly experiences,
               leveraging cloud technologies, machine learning, and AI to build
               the future.

@@ -13,7 +13,7 @@ const skills = [
     icon: Brain,
     technologies: [
       "Algorithm Design",
-      "System Architecture",
+      "Full-Stack Development",
       "Debug & Optimization",
     ],
   },
@@ -23,15 +23,29 @@ const skills = [
       "Building scalable applications with modern cloud infrastructure and containerization.",
     color: "purple",
     icon: Cloud,
-    technologies: ["AWS", "Docker", "Microservices", "CI/CD"],
+    technologies: [
+      "AWS",
+      "GCP",
+      "Docker",
+      "Microservices",
+      "CI/CD",
+      "GitHub Actions",
+    ],
   },
   {
-    title: "ML & Computer Vision",
+    title: "Machine Learning & AI",
     description:
-      "Creating intelligent solutions using machine learning and computer vision technologies.",
+      "Creating intelligent solutions using machine learning and artificial intelligence technologies.",
     color: "green",
     icon: Eye,
-    technologies: ["TensorFlow", "OpenCV", "Data Analysis", "Neural Networks"],
+    technologies: [
+      "TensorFlow",
+      "Scikit-Learn",
+      "Ageetic AI",
+      "LangChain",
+      "Data Analysis",
+      "Neural Networks",
+    ],
   },
 ];
 
