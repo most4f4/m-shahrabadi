@@ -13,8 +13,8 @@ export default function FeaturedProjects() {
   // If no featured projects, show first 3 projects
   const displayProjects =
     featuredProjects.length > 0
-      ? featuredProjects.slice(0, 3)
-      : projects.slice(0, 3);
+      ? featuredProjects.slice(0, 6)
+      : projects.slice(0, 6);
 
   return (
     <section className={styles.section}>

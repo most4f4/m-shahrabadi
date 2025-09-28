@@ -16,9 +16,9 @@ export const projects: Project[] = [
   // Featured Project
   {
     id: "chowhub",
-    title: "ChowHub - Restaurant Management System",
+    title: "ChowHub - AI-Powered Business Management System",
     description:
-      "Led a team of 4 developers to build a comprehensive full-stack restaurant management system with real-time analytics, AI insights, and multi-restaurant support.",
+      "Led a team of 4 developers to build a full-stack AI-driven business management system with AI-powered business intelligence and analytics dashboard for operational metrics.",
     category: "Web Apps",
     technologies: [
       "Next.js",
@@ -32,6 +32,43 @@ export const projects: Project[] = [
     image: "/images/projects/chowhub.png",
     demoUrl: "https://chowhub.vercel.app/",
     githubUrl: "https://github.com/most4f4/chowhub",
+    featured: true,
+    year: "2025",
+    status: "completed",
+  },
+  // AI & Machine Learning Project
+  {
+    id: "ai-assistant-m3",
+    title: "AI Assistant M3 - Multi-Tool AI Platform",
+    description:
+      "Advanced AI assistant with integrated tools for weather, currency conversion, stock prices, and calculations. Features multiple chat modes, real-time data processing, and intuitive Streamlit interface.",
+    category: "AI & Machine Learning",
+    technologies: [
+      "Python",
+      "Streamlit",
+      "LangChain",
+      "Groq API",
+      "SerpAPI",
+      "OpenWeatherMap API",
+      "AI/ML",
+    ],
+    image: "/images/projects/ai-assistant-m3.png",
+    githubUrl: "https://github.com/most4f4/Agentic_AI_Assistant",
+    featured: true,
+    year: "2025",
+    status: "completed",
+  },
+
+  // Machine Learning and Computer Vision
+  {
+    id: "sports-motion-detection",
+    title: "Sports Motion Detection & Viewport Tracking",
+    description:
+      'A Python-based motion detection and viewport tracking system that simulates a "virtual camera" for sports video analysis using computer vision techniques.',
+    category: "AI & Machine Learning",
+    technologies: ["Python", "OpenCV", "NumPy", "Computer Vision"],
+    image: "/images/projects/sports-motion.png",
+    githubUrl: "https://github.com/most4f4/Sports_Motion_Detection",
     featured: true,
     year: "2025",
     status: "completed",
@@ -53,20 +90,6 @@ export const projects: Project[] = [
     ],
     image: "/images/projects/bookworm.png",
     githubUrl: "https://github.com/most4f4/bookworm",
-    year: "2025",
-    status: "completed",
-  },
-
-  // Machine Learning and Computer Vision
-  {
-    id: "sports-motion-detection",
-    title: "Sports Motion Detection & Viewport Tracking",
-    description:
-      'A Python-based motion detection and viewport tracking system that simulates a "virtual camera" for sports video analysis using computer vision techniques.',
-    category: "Machine Learning",
-    technologies: ["Python", "OpenCV", "NumPy", "Computer Vision"],
-    image: "/images/projects/sports-motion.png",
-    githubUrl: "https://github.com/most4f4/Sports_Motion_Detection",
     featured: true,
     year: "2025",
     status: "completed",
@@ -109,6 +132,7 @@ export const projects: Project[] = [
     githubUrl:
       "https://github.com/most4f4/Hotel-Reservation-Management-System-",
     year: "2025",
+    featured: true,
     status: "completed",
   },
 
@@ -331,7 +355,7 @@ export const projects: Project[] = [
 export const categories = [
   "Featured",
   "Mobile Apps",
-  "Machine Learning",
+  "AI & Machine Learning",
   "Cloud",
   "Desktop Apps",
   "Web Apps",

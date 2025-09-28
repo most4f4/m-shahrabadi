@@ -364,6 +364,62 @@ function getProjectContent(project: Project) {
       </div>
     ),
 
+    "ai-assistant-m3": (
+      <div className={styles.projectContent}>
+        <div className={styles.leadership}>
+          <h3>🤖 AI-Powered Multi-Tool Platform</h3>
+          <p>
+            Developed a comprehensive AI assistant that combines conversational
+            AI with practical tools, featuring intelligent chat modes and
+            real-time data integration for enhanced user productivity.
+          </p>
+        </div>
+        <div className={styles.contentGrid}>
+          <div className={styles.contentBlock}>
+            <h3>Core AI Features</h3>
+            <ul>
+              <li>
+                Three intelligent chat modes: Auto (Smart), Always Search, and
+                Chat Only
+              </li>
+              <li>LangChain integration with Groq's Llama 3.1 8B model</li>
+              <li>Smart search detection using keyword analysis</li>
+              <li>Context-aware conversation handling with memory</li>
+              <li>Real-time web search integration via SerpAPI</li>
+              <li>Error handling and graceful API failure recovery</li>
+            </ul>
+          </div>
+          <div className={styles.contentBlock}>
+            <h3>Integrated Tools & APIs</h3>
+            <ul>
+              <li>
+                🌤️ Weather Tool: Real-time weather data via OpenWeatherMap API
+              </li>
+              <li>
+                💱 Currency Converter: Live exchange rates with 50+ currencies
+              </li>
+              <li>
+                📊 Stock Price Lookup: Current market data and financial
+                information
+              </li>
+              <li>🧮 Calculator: Safe mathematical expression evaluation</li>
+              <li>Interactive Streamlit interface with responsive design</li>
+              <li>Session state management and conversation persistence</li>
+            </ul>
+          </div>
+        </div>
+        <div className={styles.achievement}>
+          <h4>🏆 Technical Achievement</h4>
+          <p>
+            Successfully built a production-ready AI platform that intelligently
+            routes queries between conversational AI and specialized tools,
+            achieving seamless user experience with 4 integrated APIs and robust
+            error handling across all components.
+          </p>
+        </div>
+      </div>
+    ),
+
     // Add more project-specific content as needed
     default: (
       <div className={styles.projectContent}>
