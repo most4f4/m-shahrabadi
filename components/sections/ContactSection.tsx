@@ -113,8 +113,8 @@ export default function ContactSection() {
     {
       icon: Mail,
       title: "Email",
-      value: "mhasanalipourshahrab@myseneca.ca",
-      href: "mailto:mhasanalipourshahrab@myseneca.ca",
+      value: "mostafa@mshahrabadi.com",
+      href: "mailto:mostafa@mshahrabadi.com",
       description: "Send me an email anytime",
     },
     {
