@@ -18,21 +18,6 @@ const skills = [
     ],
   },
   {
-    title: "Cloud Solutions",
-    description:
-      "Building scalable applications with modern cloud infrastructure and containerization.",
-    color: "purple",
-    icon: Cloud,
-    technologies: [
-      "AWS",
-      "GCP",
-      "Docker",
-      "Microservices",
-      "CI/CD",
-      "GitHub Actions",
-    ],
-  },
-  {
     title: "Machine Learning & AI",
     description:
       "Creating intelligent solutions using machine learning and artificial intelligence technologies.",
@@ -45,6 +30,21 @@ const skills = [
       "LangChain",
       "Data Analysis",
       "Neural Networks",
+    ],
+  },
+  {
+    title: "Cloud Solutions",
+    description:
+      "Building scalable applications with modern cloud infrastructure and containerization.",
+    color: "purple",
+    icon: Cloud,
+    technologies: [
+      "AWS",
+      "GCP",
+      "Docker",
+      "Microservices",
+      "CI/CD",
+      "GitHub Actions",
     ],
   },
 ];
