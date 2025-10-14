@@ -409,7 +409,8 @@ function getProjectContent(project: Project) {
               <li>Document chunking with recursive text splitter (1000/200)</li>
               <li>Smart retrieval with top-3 similarity search</li>
               <li>
-                Supports follow-up questions like "summarize it", "tell me more"
+                Supports follow-up questions like &quot;summarize it&quot;,
+                &quot;tell me more&quot;
               </li>
             </ul>
           </div>
