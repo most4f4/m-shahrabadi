@@ -39,18 +39,21 @@ export const projects: Project[] = [
   // AI & Machine Learning Project
   {
     id: "ai-assistant-m3",
-    title: "AI Assistant M3 - Multi-Tool AI Platform",
+    title: "AI Assistant M3 - Conversational RAG Agent Platform",
     description:
-      "Advanced AI assistant with integrated tools for weather, currency conversion, stock prices, and calculations. Features multiple chat modes, real-time data processing, and intuitive Streamlit interface.",
+      "Production-ready AI assistant with reasoning agent, RAG document Q&A, cloud storage, and 6 integrated tools. Features conversational context awareness, lazy loading, and ChatGPT-style session management.",
     category: "AI & Machine Learning",
     technologies: [
       "Python",
       "Streamlit",
       "LangChain",
-      "Groq API",
-      "SerpAPI",
-      "OpenWeatherMap API",
-      "AI/ML",
+      "RAG",
+      "OpenAI GPT-4",
+      "Google Cloud Firestore",
+      "Google Cloud Platform",
+      "ChromaDB",
+      "OpenAI Embeddings",
+      "Tivaly",
     ],
     image: "/images/projects/ai-assistant-m3.png",
     githubUrl: "https://github.com/most4f4/Agentic_AI_Assistant",

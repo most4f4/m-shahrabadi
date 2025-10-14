@@ -26,8 +26,9 @@ const skills = [
     technologies: [
       "TensorFlow",
       "Scikit-Learn",
-      "Ageetic AI",
+      "Agentic AI",
       "LangChain",
+      "LangGraph",
       "Data Analysis",
       "Neural Networks",
     ],

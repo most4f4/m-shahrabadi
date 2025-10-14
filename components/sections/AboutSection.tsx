@@ -299,7 +299,7 @@ export default function AboutSection() {
                       Engineering and Integration
                     </strong>
                     . This research required me to work with big data excavated
-                    by probes to verify simulated wind patterns—and that&apos;s
+                    by probes to verify simulated wind patterns and that&apos;s
                     when my interest in programming first sparked.
                   </p>
                 </div>
@@ -397,21 +397,21 @@ export default function AboutSection() {
                 <div className={styles.storyContent}>
                   <h3>💼 Professional Software Development</h3>
                   <p>
-                    I secured a{" "}
-                    <strong>
-                      Web Developer Intern position at Questrade Financial Inc.
-                    </strong>{" "}
-                    (September-December 2024), where I maintained and enhanced
-                    external corporate websites and internal departmental Google
-                    Sites. I collaborated with cross-functional teams to fulfill
-                    design requirements, integrate event tracking systems, and
-                    resolve website issues, improving functionality and UI
-                    consistency across multiple platforms.
+                    My development journey began in 2020 as a Frontend Web
+                    Developer at <strong>Luna Company</strong>, where I worked
+                    with an entrepreneurial team to design and implement a web
+                    application integrated with third-party software. In 2024, I
+                    secured a Web Developer Intern position at{" "}
+                    <strong> Questrade Financial Group</strong>{" "}
+                    (September–December 2024), where I collaborated with
+                    cross-functional teams to optimize corporate websites and
+                    delivered end-to-end production systems, improving
+                    functionality and UI consistency across multiple platforms.
                   </p>
                 </div>
                 <div className={styles.storyImage}>
                   <Image
-                    src="/images/journey/questrade.jpeg"
+                    src="/images/journey/questrade.jpg"
                     alt="Professional development"
                     fill
                     className={styles.storyPhoto}

@@ -367,55 +367,160 @@ function getProjectContent(project: Project) {
     "ai-assistant-m3": (
       <div className={styles.projectContent}>
         <div className={styles.leadership}>
-          <h3>🤖 AI-Powered Multi-Tool Platform</h3>
+          <h3>🤖 Conversational RAG Agent with Cloud Storage</h3>
           <p>
-            Developed a comprehensive AI assistant that combines conversational
-            AI with practical tools, featuring intelligent chat modes and
-            real-time data integration for enhanced user productivity.
+            Built a production-grade AI assistant featuring an intelligent
+            reasoning agent, RAG-based document Q&A, conversational context
+            awareness, and Firebase cloud storage with ChatGPT-style session
+            management.
           </p>
         </div>
+
         <div className={styles.contentGrid}>
           <div className={styles.contentBlock}>
-            <h3>Core AI Features</h3>
+            <h3>🧠 Intelligent Agent System</h3>
             <ul>
               <li>
-                Three intelligent chat modes: Auto (Smart), Always Search, and
-                Chat Only
+                Reasoning agent that autonomously selects appropriate tools
+                based on context
               </li>
-              <li>LangChain integration with Groq&apos;s Llama 3.1 8B model</li>
-              <li>Smart search detection using keyword analysis</li>
-              <li>Context-aware conversation handling with memory</li>
-              <li>Real-time web search integration via SerpAPI</li>
-              <li>Error handling and graceful API failure recovery</li>
+              <li>
+                Conversational context awareness - understands pronouns and
+                follow-up questions
+              </li>
+              <li>
+                Two-level memory: agent history (10 msgs) + RAG history (20
+                msgs)
+              </li>
+              <li>Custom enhanced prompts for optimal tool selection</li>
+              <li>GPT-4 integration with LangChain agent framework</li>
+              <li>Handles multi-tool queries intelligently</li>
             </ul>
           </div>
+
           <div className={styles.contentBlock}>
-            <h3>Integrated Tools & APIs</h3>
+            <h3>📄 RAG Document Q&A</h3>
+            <ul>
+              <li>Upload PDFs, Word docs, and text files for Q&A</li>
+              <li>ChromaDB vector store with OpenAI embeddings</li>
+              <li>
+                Conversational RAG - reformulates questions using chat history
+              </li>
+              <li>Document chunking with recursive text splitter (1000/200)</li>
+              <li>Smart retrieval with top-3 similarity search</li>
+              <li>
+                Supports follow-up questions like "summarize it", "tell me more"
+              </li>
+            </ul>
+          </div>
+
+          <div className={styles.contentBlock}>
+            <h3>🛠️ Six Integrated Tools</h3>
+            <ul>
+              <li>🔍 Web Search - SerpAPI for current information</li>
+              <li>🌤️ Weather - Real-time data via OpenWeatherMap</li>
+              <li>
+                💱 Currency Converter - Live exchange rates (50+ currencies)
+              </li>
+              <li>📊 Stock Prices - Current market data lookup</li>
+              <li>🧮 Calculator - Safe mathematical expression evaluation</li>
+              <li>📄 Document Q&A - RAG-based conversational queries</li>
+            </ul>
+          </div>
+
+          <div className={styles.contentBlock}>
+            <h3>☁️ Google Cloud Storage & Session Management</h3>
+            <ul>
+              <li>Google Cloud Firestore integration for persistent storage</li>
+              <li>
+                Cloud-native architecture with service account authentication
+              </li>
+              <li>
+                ChatGPT-style UI with smart session titles (generated from first
+                message)
+              </li>
+              <li>
+                Lazy loading - sessions load only when clicked (5-8x faster)
+              </li>
+              <li>Auto-save functionality with session caching</li>
+              <li>Delete sessions with one click</li>
+              <li>Supports multiple conversations with seamless switching</li>
+              <li>
+                Scalable cloud infrastructure supporting 100+ concurrent users
+              </li>
+            </ul>
+          </div>
+
+          <div className={styles.contentBlock}>
+            <h3>🏗️ Architecture & Design</h3>
             <ul>
               <li>
-                🌤️ Weather Tool: Real-time weather data via OpenWeatherMap API
+                Modular architecture: separate tools, agents, RAG, UI, and utils
+                packages
               </li>
+              <li>Tool decorator pattern for easy extensibility</li>
+              <li>Pydantic schemas for type-safe tool inputs</li>
+              <li>Session state management with Streamlit</li>
+              <li>Error handling and graceful API failure recovery</li>
+              <li>Configuration-driven design (easy to customize)</li>
+            </ul>
+          </div>
+
+          <div className={styles.contentBlock}>
+            <h3>⚡ Performance Optimizations</h3>
+            <ul>
+              <li>Lazy loading for 5-8x faster startup</li>
+              <li>Session metadata caching (no repeated Firebase queries)</li>
+              <li>Title storage at creation (not generated each time)</li>
               <li>
-                💱 Currency Converter: Live exchange rates with 50+ currencies
+                Optimized Firestore reads (metadata only, not full messages)
               </li>
-              <li>
-                📊 Stock Price Lookup: Current market data and financial
-                information
-              </li>
-              <li>🧮 Calculator: Safe mathematical expression evaluation</li>
-              <li>Interactive Streamlit interface with responsive design</li>
-              <li>Session state management and conversation persistence</li>
+              <li>Agent caching with @st.cache_resource</li>
+              <li>Configurable auto-load for speed vs UX balance</li>
             </ul>
           </div>
         </div>
+
         <div className={styles.achievement}>
-          <h4>🏆 Technical Achievement</h4>
-          <p>
-            Successfully built a production-ready AI platform that intelligently
-            routes queries between conversational AI and specialized tools,
-            achieving seamless user experience with 4 integrated APIs and robust
-            error handling across all components.
-          </p>
+          <h4>🏆 Technical Achievements</h4>
+          <ul>
+            <li>
+              <strong>Intelligent Agent:</strong> Built reasoning agent that
+              autonomously selects and chains tools with conversational context
+              awareness
+            </li>
+            <li>
+              <strong>Conversational RAG:</strong> Implemented dual-memory
+              system with question reformulation for natural document Q&A
+            </li>
+            <li>
+              <strong>Cloud Architecture:</strong> Integrated Google Cloud
+              Firestore for production-grade data persistence with service
+              account security
+            </li>
+            <li>
+              <strong>Production Design:</strong> Modular, scalable architecture
+              with 6 tools, cloud storage, and ChatGPT-style UX
+            </li>
+            <li>
+              <strong>Performance:</strong> Achieved 5-8x faster load times
+              through lazy loading and intelligent caching strategies
+            </li>
+          </ul>
+        </div>
+
+        <div className={styles.keyFeatures}>
+          <h4>💡 Key Features</h4>
+          <div className={styles.featureHighlights}>
+            <span className={styles.badge}>Reasoning Agent</span>
+            <span className={styles.badge}>Conversational Context</span>
+            <span className={styles.badge}>RAG Document Q&A</span>
+            <span className={styles.badge}>Cloud Storage</span>
+            <span className={styles.badge}>ChatGPT-style UI</span>
+            <span className={styles.badge}>Lazy Loading</span>
+            <span className={styles.badge}>Multi-Tool Integration</span>
+            <span className={styles.badge}>Modular Architecture</span>
+          </div>
         </div>
       </div>
     ),
