@@ -526,6 +526,178 @@ function getProjectContent(project: Project) {
       </div>
     ),
 
+    "self-driving-car": (
+      <div className={styles.projectContent}>
+        <div className={styles.leadership}>
+          <h3>🚗 End-to-End Deep Learning for Autonomous Driving</h3>
+          <p>
+            Implemented an autonomous driving system using the NVIDIA CNN
+            architecture that learns to predict steering angles directly from
+            raw camera images, enabling the car to navigate a track without
+            human intervention in the Udacity self-driving car simulator.
+          </p>
+        </div>
+
+        <div className={styles.contentGrid}>
+          <div className={styles.contentBlock}>
+            <h3>🧠 Deep Learning Architecture</h3>
+            <ul>
+              <li>
+                NVIDIA-inspired CNN with 5 convolutional + 4 fully connected
+                layers
+              </li>
+              <li>~1.6 million trainable parameters for steering prediction</li>
+              <li>Input: 66×200×3 YUV images preprocessed from simulator</li>
+              <li>Output: Single steering angle value (-1 to 1 range)</li>
+              <li>End-to-end learning from pixels to steering commands</li>
+              <li>Real-time inference at 30+ FPS in autonomous mode</li>
+            </ul>
+          </div>
+
+          <div className={styles.contentBlock}>
+            <h3>📊 Data Collection & Preprocessing</h3>
+            <ul>
+              <li>Manual driving data collection (15,000+ training images)</li>
+              <li>
+                5-stage preprocessing pipeline: crop, YUV conversion, blur,
+                resize, normalize
+              </li>
+              <li>
+                Data balancing to prevent straight-driving bias (40-50% turns)
+              </li>
+              <li>80/20 train-validation split with stratified sampling</li>
+              <li>
+                Batch generator for efficient memory usage during training
+              </li>
+              <li>Comprehensive visualization tools for data analysis</li>
+            </ul>
+          </div>
+
+          <div className={styles.contentBlock}>
+            <h3>🎨 Advanced Data Augmentation</h3>
+            <ul>
+              <li>
+                Horizontal flip (50%) - mirrors image and negates steering
+              </li>
+              <li>
+                Random brightness adjustment (50%) - simulates lighting
+                conditions
+              </li>
+              <li>Shadow augmentation (30%) - adds random shadows to images</li>
+              <li>
+                Horizontal pan (30%) - shifts image ±50 pixels with steering
+                correction
+              </li>
+              <li>
+                Zoom augmentation (30%) - scales image ±20% to simulate distance
+              </li>
+              <li>Prevents overfitting and improves generalization</li>
+            </ul>
+          </div>
+
+          <div className={styles.contentBlock}>
+            <h3>🔧 Training Pipeline</h3>
+            <ul>
+              <li>TensorFlow 2.19+ with Keras 3.11+ for model training</li>
+              <li>Adam optimizer with 0.0003 learning rate</li>
+              <li>Mean Squared Error (MSE) loss function</li>
+              <li>Early stopping with patience=5 to prevent overfitting</li>
+              <li>Model checkpointing to save best validation performance</li>
+              <li>Training visualization with loss and MAE metrics</li>
+            </ul>
+          </div>
+
+          <div className={styles.contentBlock}>
+            <h3>🚀 Real-Time Autonomous Driving</h3>
+            <ul>
+              <li>Socket.IO communication with Udacity simulator</li>
+              <li>Real-time telemetry: speed, steering angle, throttle</li>
+              <li>Adaptive throttle control based on steering angle</li>
+              <li>Configurable max speed for safety and stability</li>
+              <li>Live performance monitoring and debugging</li>
+              <li>Successful autonomous navigation on trained track</li>
+            </ul>
+          </div>
+
+          <div className={styles.contentBlock}>
+            <h3>📈 Model Performance</h3>
+            <ul>
+              <li>Validation Loss (MSE): 0.0323</li>
+              <li>Validation MAE: 0.1392 degrees</li>
+              <li>Training samples: 4,312 images</li>
+              <li>Validation samples: 1,078 images</li>
+              <li>Training time: 2-5 minutes on GPU, 5-15 minutes on CPU</li>
+              <li>Successfully completes multiple laps autonomously</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className={styles.achievement}>
+          <h4>🏆 Technical Achievements</h4>
+          <ul>
+            <li>
+              <strong>End-to-End Learning:</strong> Implemented complete
+              autonomous driving pipeline from raw camera images to steering
+              predictions
+            </li>
+            <li>
+              <strong>NVIDIA Architecture:</strong> Successfully adapted and
+              trained production-grade CNN architecture for behavioral cloning
+            </li>
+            <li>
+              <strong>Data Engineering:</strong> Built comprehensive data
+              collection, balancing, and augmentation pipeline for robust model
+              training
+            </li>
+            <li>
+              <strong>Real-Time Performance:</strong> Achieved 30+ FPS inference
+              with stable autonomous driving in simulator environment
+            </li>
+            <li>
+              <strong>Computer Vision:</strong> Mastered image preprocessing
+              techniques including color space conversion, cropping, and
+              normalization
+            </li>
+            <li>
+              <strong>Production System:</strong> Developed complete training
+              and deployment pipeline with visualization and monitoring tools
+            </li>
+          </ul>
+        </div>
+
+        <div className={styles.keyFeatures}>
+          <h4>💡 Key Features</h4>
+          <div className={styles.featureHighlights}>
+            <span className={styles.badge}>Deep Learning</span>
+            <span className={styles.badge}>NVIDIA CNN</span>
+            <span className={styles.badge}>End-to-End Learning</span>
+            <span className={styles.badge}>Data Augmentation</span>
+            <span className={styles.badge}>Real-Time Inference</span>
+            <span className={styles.badge}>Computer Vision</span>
+            <span className={styles.badge}>Behavioral Cloning</span>
+            <span className={styles.badge}>TensorFlow/Keras</span>
+          </div>
+        </div>
+
+        <div className={styles.technicalDetails}>
+          <h4>🔬 Technical Deep Dive</h4>
+          <p>
+            The project demonstrates mastery of deep learning for autonomous
+            systems through implementation of the NVIDIA architecture. The
+            preprocessing pipeline converts BGR images to YUV color space
+            (preferred for CNNs), crops unnecessary regions, applies Gaussian
+            blur for noise reduction, and resizes to the standard 66×200 input
+            size. The data augmentation strategy prevents overfitting by
+            artificially expanding the training set with realistic variations in
+            lighting, position, and orientation. The trained model achieves low
+            validation loss (0.03) and successfully generalizes to unseen track
+            sections, demonstrating effective learning of steering behavior from
+            visual input alone.
+          </p>
+        </div>
+      </div>
+    ),
+
     // Add more project-specific content as needed
     default: (
       <div className={styles.projectContent}>

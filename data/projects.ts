@@ -62,6 +62,29 @@ export const projects: Project[] = [
     status: "completed",
   },
 
+  {
+    id: "self-driving-car",
+    title: "Self-Driving Car Simulation - Deep Learning CNN",
+    description:
+      "End-to-end deep learning system using NVIDIA CNN architecture to autonomously drive a car in Udacity simulator. Features real-time steering prediction from camera images with comprehensive data augmentation and preprocessing pipeline.",
+    category: "AI & Machine Learning",
+    technologies: [
+      "Python",
+      "TensorFlow",
+      "Keras",
+      "OpenCV",
+      "NumPy",
+      "Deep Learning",
+      "Computer Vision",
+      "CNN",
+    ],
+    image: "/images/projects/self-driving-car.png",
+    githubUrl: "https://github.com/most4f4/Self_driving_car",
+    featured: true,
+    year: "2025",
+    status: "completed",
+  },
+
   // Machine Learning and Computer Vision
   {
     id: "sports-motion-detection",
