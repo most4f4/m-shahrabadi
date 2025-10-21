@@ -39,9 +39,9 @@ export const projects: Project[] = [
   // AI & Machine Learning Project
   {
     id: "ai-assistant-m3",
-    title: "AI Assistant M3 - Conversational RAG Agent Platform",
+    title: "AI Assistant M3 - Conversational RAG Agent with Voice I/O",
     description:
-      "Production-ready AI assistant with reasoning agent, RAG document Q&A, cloud storage, and 6 integrated tools. Features conversational context awareness, lazy loading, and ChatGPT-style session management.",
+      "Production-ready AI assistant with reasoning agent, voice input/output (OpenAI Whisper & TTS), RAG document Q&A, cloud storage, and 7 integrated tools. Features conversational context awareness, natural voice interaction with 6 voice personalities, lazy loading, and ChatGPT-style session management.",
     category: "AI & Machine Learning",
     technologies: [
       "Python",
@@ -49,11 +49,15 @@ export const projects: Project[] = [
       "LangChain",
       "RAG",
       "OpenAI GPT-4",
+      "OpenAI Whisper",
+      "OpenAI TTS",
       "Google Cloud Firestore",
       "Google Cloud Platform",
       "ChromaDB",
       "OpenAI Embeddings",
-      "Tivaly",
+      "Tavily",
+      "WebRTC",
+      "audio-recorder-streamlit",
     ],
     image: "/images/projects/ai-assistant-m3.png",
     githubUrl: "https://github.com/most4f4/Agentic_AI_Assistant",

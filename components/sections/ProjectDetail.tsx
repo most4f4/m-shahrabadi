@@ -367,12 +367,12 @@ function getProjectContent(project: Project) {
     "ai-assistant-m3": (
       <div className={styles.projectContent}>
         <div className={styles.leadership}>
-          <h3>🤖 Conversational RAG Agent with Cloud Storage</h3>
+          <h3>🤖 Conversational RAG Agent with Voice I/O & Cloud Storage</h3>
           <p>
             Built a production-grade AI assistant featuring an intelligent
             reasoning agent, RAG-based document Q&A, conversational context
-            awareness, and Firebase cloud storage with ChatGPT-style session
-            management.
+            awareness, natural voice interaction with OpenAI Whisper & TTS, and
+            Firebase cloud storage with ChatGPT-style session management.
           </p>
         </div>
 
@@ -399,6 +399,26 @@ function getProjectContent(project: Project) {
           </div>
 
           <div className={styles.contentBlock}>
+            <h3>🎤 Voice Input/Output System (NEW!)</h3>
+            <ul>
+              <li>
+                OpenAI Whisper integration for high-accuracy speech recognition
+                (99+ languages)
+              </li>
+              <li>
+                Natural text-to-speech with 6 voice personalities (OpenAI TTS)
+              </li>
+              <li>Auto-speak mode for hands-free conversational experience</li>
+              <li>Real-time audio transcription with browser WebRTC API</li>
+              <li>
+                Voice-enabled document Q&A - speak questions, hear responses
+              </li>
+              <li>Manual playback controls for any AI message</li>
+              <li>Base64 audio encoding with HTML5 autoplay integration</li>
+            </ul>
+          </div>
+
+          <div className={styles.contentBlock}>
             <h3>📄 RAG Document Q&A</h3>
             <ul>
               <li>Upload PDFs, Word docs, and text files for Q&A</li>
@@ -416,16 +436,17 @@ function getProjectContent(project: Project) {
           </div>
 
           <div className={styles.contentBlock}>
-            <h3>🛠️ Six Integrated Tools</h3>
+            <h3>🛠️ Seven Integrated Tools</h3>
             <ul>
-              <li>🔍 Web Search - SerpAPI for current information</li>
+              <li>🔍 Web Search - Tavily API for current information</li>
               <li>🌤️ Weather - Real-time data via OpenWeatherMap</li>
               <li>
                 💱 Currency Converter - Live exchange rates (50+ currencies)
               </li>
-              <li>📊 Stock Prices - Current market data lookup</li>
+              <li>📊 Stock Prices - Current market data lookup (SerpAPI)</li>
               <li>🧮 Calculator - Safe mathematical expression evaluation</li>
               <li>📄 Document Q&A - RAG-based conversational queries</li>
+              <li>🎤 Voice I/O - Speech recognition & natural TTS</li>
             </ul>
           </div>
 
@@ -456,14 +477,17 @@ function getProjectContent(project: Project) {
             <h3>🏗️ Architecture & Design</h3>
             <ul>
               <li>
-                Modular architecture: separate tools, agents, RAG, UI, and utils
-                packages
+                Modular architecture: separate tools, agents, RAG, UI, voice,
+                and utils packages
               </li>
               <li>Tool decorator pattern for easy extensibility</li>
               <li>Pydantic schemas for type-safe tool inputs</li>
               <li>Session state management with Streamlit</li>
               <li>Error handling and graceful API failure recovery</li>
               <li>Configuration-driven design (easy to customize)</li>
+              <li>
+                Separation of concerns - voice logic isolated from core chat
+              </li>
             </ul>
           </div>
 
@@ -478,6 +502,25 @@ function getProjectContent(project: Project) {
               </li>
               <li>Agent caching with @st.cache_resource</li>
               <li>Configurable auto-load for speed vs UX balance</li>
+              <li>Efficient audio encoding with temporary file cleanup</li>
+            </ul>
+          </div>
+
+          <div className={styles.contentBlock}>
+            <h3>🎯 Voice Module Technical Details</h3>
+            <ul>
+              <li>Browser WebRTC MediaRecorder for real-time audio capture</li>
+              <li>
+                OpenAI Whisper API with language hints for transcription
+                accuracy
+              </li>
+              <li>OpenAI TTS API with configurable models (tts-1/tts-1-hd)</li>
+              <li>Base64 audio encoding for browser-native playback</li>
+              <li>Temporary file management for secure audio processing</li>
+              <li>
+                Session state for voice preferences (auto-speak, selected voice)
+              </li>
+              <li>Cost-optimized with configurable quality settings</li>
             </ul>
           </div>
         </div>
@@ -491,6 +534,11 @@ function getProjectContent(project: Project) {
               awareness
             </li>
             <li>
+              <strong>Voice Integration:</strong> Implemented production-grade
+              voice I/O system with OpenAI Whisper (speech recognition) and TTS
+              (6 natural voices) for hands-free interaction
+            </li>
+            <li>
               <strong>Conversational RAG:</strong> Implemented dual-memory
               system with question reformulation for natural document Q&A
             </li>
@@ -501,7 +549,7 @@ function getProjectContent(project: Project) {
             </li>
             <li>
               <strong>Production Design:</strong> Modular, scalable architecture
-              with 6 tools, cloud storage, and ChatGPT-style UX
+              with 7 tools, voice I/O, cloud storage, and ChatGPT-style UX
             </li>
             <li>
               <strong>Performance:</strong> Achieved 5-8x faster load times
@@ -514,6 +562,8 @@ function getProjectContent(project: Project) {
           <h4>💡 Key Features</h4>
           <div className={styles.featureHighlights}>
             <span className={styles.badge}>Reasoning Agent</span>
+            <span className={styles.badge}>Voice Input/Output</span>
+            <span className={styles.badge}>OpenAI Whisper & TTS</span>
             <span className={styles.badge}>Conversational Context</span>
             <span className={styles.badge}>RAG Document Q&A</span>
             <span className={styles.badge}>Cloud Storage</span>
