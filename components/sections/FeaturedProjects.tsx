@@ -38,7 +38,7 @@ export default function FeaturedProjects() {
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            A showcase of my most impactful and innovative work
+            A showcase of my recent work and accomplishments
           </motion.p>
         </div>
 
