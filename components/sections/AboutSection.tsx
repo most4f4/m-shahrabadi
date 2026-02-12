@@ -24,14 +24,14 @@ export default function AboutSection() {
     {
       icon: GraduationCap,
       label: "Education",
-      value: "M.Eng + Adv. Diploma",
+      value: "M.Sc. + Adv. Diploma",
       description: "University of Birmingham & Seneca Polytechnic",
     },
     {
       icon: Award,
       label: "Academic Honors",
       value: "5× Honor List",
-      description: "President's Honor List + Research Selection",
+      description: "President's Honor List + Scholarships & Bursaries",
     },
     {
       icon: Code,
@@ -41,9 +41,9 @@ export default function AboutSection() {
     },
     {
       icon: Briefcase,
-      label: "Professional Experience",
-      value: "Web Developer",
-      description: "Questrade Financial Inc. (Sep-Dec 2024)",
+      label: "Recent Experience",
+      value: "Software Developer",
+      description: "Questrade Financial Group",
     },
   ];
 
@@ -58,17 +58,39 @@ export default function AboutSection() {
       "PHP",
       "Swift",
     ],
-    "Machine Learning & AI": [
+    "Cloud & DevOps": [
+      "AWS",
+      "GCP",
+      "Azure",
+      "Docker",
+      "Kubernetes (EKS, GKE, AKS)",
+      "Serverless (Lambda, Cloud Functions, Azure Functions)",
+      "Event-Driven (API Gateway, SNS, SQS, EventBridge)",
+      "Terraform",
+      "CI/CD",
+      "Git",
+    ],
+    "Machine Learning & Data Science": [
       "TensorFlow",
       "Scikit-Learn",
       "OpenCV",
       "Pandas",
       "NumPy",
-      "LangChain",
-      "LangSmith",
-      "Agentic AI",
+      "Matplotlib",
+      "Seaborn",
+      "Jupyter Notebooks",
     ],
-    "Automation & Workflows": ["n8n"],
+    "AI & Generative AI": [
+      "n8n",
+      "LangChain",
+      "LangGraph",
+      "LangSmith",
+      "Google AI SDK (ADK)",
+      "CrewAI",
+      "OpenAI Agents SDK",
+      "Vertex AI",
+      "Agentic Frameworks",
+    ],
     "Frontend Development": [
       "React",
       "Next.js",
@@ -86,21 +108,11 @@ export default function AboutSection() {
       "Microservices",
       "WordPress",
     ],
-    "Cloud & DevOps": [
-      "AWS (ECS, Fargate, DynamoDB, S3, Cognito)",
-      "GCP (GCS, Cloud Firestore, Cloud Bigtable)",
-      "Docker",
-      "CI/CD",
-      "Git",
-    ],
     Databases: [
-      "MongoDB",
-      "DB2",
-      "SQL",
-      "PostgreSQL",
-      "Oracle SQL Developer",
-      "Supabase",
-      "Firebase",
+      "Relational:(PostgreSQL, Oracle, DB2, SQL Server) ",
+      "NoSQL (MongoDB, DynamoDB, Cosmos DB, Firestore)",
+      "Caching (Redis)",
+      "Data Modeling & Optimization",
     ],
 
     "QA & Testing": [
@@ -114,7 +126,6 @@ export default function AboutSection() {
       "BDD",
       "Gherkin Scripts",
     ],
-
     "Development Tools": [
       "Cursor AI",
       "VS Code",
@@ -162,12 +173,12 @@ export default function AboutSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              With a Master&apos;s in Engineering from the University of
-              Birmingham and an Advanced Diploma in Computer Programming &
-              Analysis from Seneca Polytechnic, I bring a unique blend of
-              analytical thinking and creative problem-solving to software
-              development. My engineering background gives me a systematic
-              approach to building robust, scalable applications.
+              With a Master of Science from the University of Birmingham and an
+              Advanced Diploma in Computer Programming & Analysis from Seneca
+              Polytechnic, I bring a unique blend of analytical thinking and
+              creative problem-solving to software development. My engineering
+              background gives me a systematic approach to building robust,
+              scalable applications.
             </motion.p>
 
             <motion.div
@@ -181,10 +192,10 @@ export default function AboutSection() {
                 Get In Touch
               </Link>
 
-              <a href="/Resume.pdf" download className={styles.secondaryButton}>
+              {/* <a href="/Resume.pdf" download className={styles.secondaryButton}>
                 <Download size={20} />
                 Download Resume
-              </a>
+              </a> */}
             </motion.div>
 
             <motion.div
@@ -201,14 +212,14 @@ export default function AboutSection() {
               >
                 <Github size={20} />
               </a>
-              <a
+              {/* <a
                 href="https://linkedin.com/in/mostafa-shah"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.socialLink}
               >
                 <Linkedin size={20} />
-              </a>
+              </a> */}
             </motion.div>
           </div>
 
@@ -263,7 +274,7 @@ export default function AboutSection() {
       </motion.section>
 
       {/* My Journey Section */}
-      <motion.section
+      {/* <motion.section
         className={styles.journeySection}
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -421,7 +432,7 @@ export default function AboutSection() {
             </div>
           </div>
         </div>
-      </motion.section>
+      </motion.section> */}
 
       {/* Skills Section */}
       <motion.section

@@ -42,7 +42,7 @@ export default function ContactSection() {
   });
 
   const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -140,12 +140,12 @@ export default function ContactSection() {
       href: "https://github.com/most4f4",
       color: "#333",
     },
-    {
-      icon: Linkedin,
-      name: "LinkedIn",
-      href: "https://linkedin.com/in/mostafa-shah",
-      color: "#0077b5",
-    },
+    // {
+    //   icon: Linkedin,
+    //   name: "LinkedIn",
+    //   href: "https://linkedin.com/in/mostafa-shah",
+    //   color: "#0077b5",
+    // },
   ];
 
   return (

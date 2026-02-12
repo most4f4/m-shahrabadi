@@ -25,7 +25,7 @@ export default function Footer() {
               >
                 <Github size={20} />
               </a>
-              <a
+              {/* <a
                 href={SITE_CONFIG.social.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -33,7 +33,7 @@ export default function Footer() {
                 aria-label="LinkedIn"
               >
                 <Linkedin size={20} />
-              </a>
+              </a> */}
               <a
                 href={`mailto:${SITE_CONFIG.social.email}`}
                 className="text-gray-400 hover:text-white transition-colors"
@@ -65,7 +65,7 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Resources</h4>
             <ul className="space-y-2">
-              <li>
+              {/* <li>
                 <a
                   href="/Resume.pdf"
                   target="_blank"
@@ -75,7 +75,7 @@ export default function Footer() {
                   Resume
                   <ExternalLink size={12} />
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a
                   href={SITE_CONFIG.social.github}
